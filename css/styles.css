@@ -623,8 +623,7 @@ img {
 /*ФОРМА ПОДПИСКИ ФУТЕР*/
 
 .footer-subscribe {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 93px;
 }
 .footer-button {
   display: inline-flex;
@@ -663,10 +662,19 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  padding-top: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--header-bg-color);
+}
+.modal-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 .modal-button {
   display: inline-block;
@@ -686,4 +694,8 @@ img {
 .modal-close-icon {
   width: 11px;
   height: 11px;
+}
+.modal-button:hover .modal-close-icon,
+.modal-button:focus .modal-close-icon {
+  fill: var(--accent-color);
 }
