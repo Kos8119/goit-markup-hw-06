@@ -845,33 +845,3 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-/*.modal-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 12px;
-  padding: 0 40px;
-}
-.modal-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.modal-name-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  transform: translateY(-50%);
-}
-.modal-comment {
-  resize: none;
-}
-.modal-send {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
