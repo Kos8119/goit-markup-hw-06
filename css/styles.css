@@ -72,6 +72,10 @@ img {
   height: 1px;
   margin: -1px;
 }
+/*:focus {
+  outline: none;
+} */
+
 /*LOGO-STUDIO HEADER AND FOOTER*/
 .logo-webstudio {
   margin-right: 93px;
@@ -681,7 +685,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-top: 40px;
+  padding: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--header-bg-color);
@@ -725,8 +729,6 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .modal-form > label {
@@ -764,7 +766,7 @@ img {
 
 .m-field :hover + .m-icon,
 .m-field :focus + .m-icon {
-  /*border-color: var(--accent-color);*/
+  border-color: var(--accent-color);
   fill: var(--accent-color);
   cursor: pointer;
 }
@@ -797,6 +799,9 @@ img {
   border: var(--header-bg-color);
 }
 
+.comment-field {
+  margin-bottom: 0;
+}
 .comment-field ::placeholder {
   font-family: Roboto;
   font-style: normal;
@@ -823,7 +828,12 @@ img {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
+.modal-checkbox :hover .checkbox-icon,
+.modal-checkbox :focus ~ .checkbox-icon {
+  outline: none;
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
 .modal-check {
   position: relative;
   text-align: center;
@@ -841,7 +851,6 @@ img {
   color: var(--accent-color);
 }
 .modal-send {
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
